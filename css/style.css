@@ -4,10 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
  /* COMMON  */
 body {
-    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;   
 }
 
 .white-input { 
@@ -17,18 +17,21 @@ body {
     border: none;
 }
 
-
 .long-input {
     color: white;
     background-color: #23272A;
     border-radius: 50px;
     padding: 10px;
     border: none;
-    
 }
 
 p {
     padding: 25px 0 15px 0; 
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 35px;
 }
 
 /* HEADER  */
@@ -36,7 +39,6 @@ header {
     height: 60px;
     display: flex;
     background-color: #255EE9 ;
-
 }
 
 .nav-bar {
@@ -45,43 +47,23 @@ header {
     width: 70%;
     margin: auto;
     align-items: center;
-    /* DEBUG
-    background-color: #DAA520; */
-     
 }
 
-ul {
+ul.border {
     list-style-type: none;
     width: 50%;
     text-align: center;
-
 }
 
 li {
     display: inline-block;
     margin-left: 20px;
-    
-}
-
-.border {
-    /* border-style: dashed; */
-    /* flex-grow: 1; */
 }
 
 a {
     text-decoration: none;
     color: white;
-
 }
-
-
-/* .left {
-    text-align: right;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-} */
-
-
 
 /* MAIN  */
 .section-1{
@@ -93,17 +75,11 @@ a {
 }
 
 .pink {
-    /* height: 280px; */
     width: 50%;
     margin: auto;
     color: white;
     text-align: center;
-    /* DEBUG */
-    /* background-color: #EE82EE;
-    border-style: dashed; */
-
 }
-
 
 .special-section { 
     height: 500px;
@@ -111,7 +87,6 @@ a {
 }
 
 .container {
-    
     height: 380px;
     width: 70%;
     margin: auto;
@@ -122,14 +97,12 @@ a {
     background-image: url(../img/item1.svg);
     background-size: cover;
     background-position: center;
-
 }
 
 .item-2 {
     background-image: url(../img/item2.svg);
     background-size: cover;
     background-position: center;
-
 }
 
 .item-3 {
@@ -137,71 +110,76 @@ a {
     background-size: cover;
     background-position: center;
 }
+
 .item-1, .item-2, .item-3{
     height: 100%;
     width: 70%;
-    /* DEBUG */
-    /* background-color: lightskyblue; */
-    /* border-style: dashed; */
-
 }
 
 .left {
     text-align: left;
-   
 }
+
 .rose {
     height: 100%;
     width: 50%;
     padding-left: 45px;
     margin-top: 25px;
-    
-    /* DEBUG */
-    /* background-color: pink;
-    border-style: dashed; */
 }
-
-/* .bc-grey {
-    /* DEBUG */
-    /* background-color: lightgray;
-} */
-
 
 .big-section {
-    height: 600px;
-    display: flex;
-    background-color: lightgrey;
+    text-align: center;
+    padding-top: 45px;
 }
+
 .big-container {
-    height: 550px;
+    height: 560px;
     width: 70%;
     margin: auto;
-    /* DEBUG */
-    background-color: green;
-    border-style: dashed;
+    display: flex;
+    background-image: url(../img/item4-big.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.star {
+    height: 200px;
+    width: 70%;
+    margin: auto;
+    background-image: url(../img/stars.svg);
+    text-align: center;
+    background-repeat: no-repeat;
+} 
+
+.button {
+    margin: 30px 0 20px 0;
 }
 
 /* FOOTER  */
 .section-column {
     display: flex;
     height: 380px;
-    /* DEBUG */
-    background-color: gray;
+    background-color: #23272A ;
+    font-size: 15px;
 }
 
 .first-column {
     height: 100%;
-    width: 30%;
-    background-color: purple;
-    border-style: dashed;
+    width: 25%; 
+    color: white;
+    padding-top: 30px;
+}
+
+.logo-ita{
+    height: 12px;px;
+    width: 8%;
 }
 
 .column {
     flex-direction: column;
     height: 100%;
-    width: 20%;
-    border-style: dashed;
-    background-color: lightseagreen;
+    width: calc(100%/4); 
+    padding: 30px;
 }
 
 .bottom-footer {
@@ -209,28 +187,45 @@ a {
     height: 70px;
     align-items: flex-end;
     justify-content: center;
-    /* DEBUG  */
-    background-color: gray;
-    
+    background-color: #23272A;
 }
 
 .container-footer {
     height: 50px;
     width: 60%;
     display: flex;
+    margin: auto;
     justify-content: space-between;
-    align-items: center;
-    /* DEBUG  */
-    background-color:aquamarine ;
+    border-top: 2px solid #7289DA;
+    padding: 10px
 }
 
-.logo, .button {
+.purple-text a, h3 {
+    color: #7289DA;
+}
+
+.logo {
     height: 30px;
     width: 10%;
     display: flex;
     padding: 5px;
-    
-    /* DEBUG  */
-    background-color: plum;
-    border-style: dashed;
 }
+
+i {
+    padding: 10px;
+}
+
+.purple {
+    background-color: #7289DA;
+    color: white;
+    border-radius: 50px;
+    padding: 12px;
+    border: none;
+    vertical-align: middle;
+}
+
+.column ul li {
+    width: 100%;
+    padding-bottom: 10px
+}
+
